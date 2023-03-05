@@ -71,13 +71,10 @@ overflow-y: auto;
     background-color: var(--primary-color);
 }
 .dash-active{
-    margin-left: 16rem;
-    margin-right: 1rem;
-}
-.dash-inactive{
     margin-left: 1rem;
     margin-right: 1rem;
 }
+
 .link{
    color:var(--primary-color);
    text-decoration: none;
@@ -90,10 +87,19 @@ overflow-y: auto;
  justify-content: space-between;
  align-items: center;
 }
+
 .formlink:hover{
     border: 2px solid var(--primary-color);
 }
+.bg-aliceblue{
+    background-color: aliceblue;
+}
+/* product form */
+.productform{
+    background-color: aliceblue;
+   border-top:2px solid grey
 
+}
    
 @media (min-width:60em) {
     .only-desktop{
@@ -101,6 +107,14 @@ overflow-y: auto;
     }
     .only-mobile{
         display: none;
+    }
+    .desktop-height-60vh{
+     max-height: 60vh;
+     overflow-y: scroll;
+    }
+    .dash-active{
+        margin-left: 16rem;
+        margin-right: 1rem;
     }
     
 }

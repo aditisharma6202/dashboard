@@ -43,7 +43,8 @@ function CommanTable({
       return {
         name: key,
         selector: (row) => row[key],
-        wrap: true,
+       // wrap: true,
+       
         conditionalCellStyles: [
           {
             when: (row) => row["status"] === "1",

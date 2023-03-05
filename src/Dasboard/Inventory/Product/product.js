@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Breadcrumb from '../../../Utility/breadcrumb';
 import { Link } from 'react-router-dom';
 import ProductTable from './productTable';
+import ProductForm from './productForm';
 const formlinks=[{title:'HSN',formlink:'/'},
 {title:'HSN',formlink:'/'},
 {title:'HSN',formlink:'/'},
@@ -13,12 +14,13 @@ const formlinks=[{title:'HSN',formlink:'/'},
 {title:'Vendor',formlink:'/'},
 ]
 function Product() {
-    const[isOpen, setisOpen]=useState(true)
+   
     return ( <>
-    <Header isOpen={isOpen} setisOpen={setisOpen}/>
-    <div className={isOpen?'dash-active my-5 pt-2':'dash-inactive mt-5 pt-2'}>
+    <Header />
+    <div className='dash-active mt-5 pt-2'>
         <Breadcrumb catagory={'Inventory'} subcatagory={'Product'}/>
-        <div className='col-12 only-desktop'>
+        <div className='col-12 '>
+            <div className='only-desktop'>
             <div className='row'>
             {formlinks.map((info)=>{
                 return(
@@ -30,15 +32,31 @@ function Product() {
                
             })}
            </div> 
+           </div>
           <div className='row mt-5'>
             <div className='col-md-8 col-12'>
                 <div className='card'>
                     <div className='card-body'>
+                        <div className='desktop-height-60vh'>
                        <ProductTable/>
+                       </div>
+                       
+                       <ProductForm/>
                     </div>
                 </div>
             </div>
-            <div className='col-md-4 col-12'></div>
+            <div className='col-md-4 col-12'>
+                <div className='card bg-aliceblue vh-100'>
+                    <div className='card-body'>
+                        <h5 className='title'>
+                            Search Product
+                        </h5>
+                        <div className='col d-flex mt-3'>
+                            <input/><button className='btn btn-success'>Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
           </div>
         </div>
     </div>

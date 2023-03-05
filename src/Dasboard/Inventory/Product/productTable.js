@@ -22,7 +22,7 @@ function ProductTable(props) {
         //   { headers: headers }
         );
      
-        setTotal(response?.data.row);
+        setTotal(response?.data.total);
       
         //  setFilterdata(response.data.data);
         setData(response.data.products);
@@ -41,7 +41,7 @@ function ProductTable(props) {
       <>
         <CommanTable
           data={data}
-          title="Product Table"
+          title="Product Master"
           pageId="ProductTable"
           setPage={(val) => setPage(val)}
           row={row}
