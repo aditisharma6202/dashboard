@@ -6,6 +6,7 @@ import { Routes } from "react-router";
 // import ScrollIntoView from "./contents/scrollUp.js/scrollUp";
 import reportWebVitals from './reportWebVitals';
 import DashboardMain from './Dasboard';
+import Product from './Dasboard/Inventory/Product/product';
 
 
 
@@ -18,6 +19,7 @@ root.render(
       
         <Routes>
           <Route path="/" element={<DashboardMain />} />
+          <Route path="/product" element={ <Product/>} />
         </Routes>
       
     {/* </ScrollIntoView> */}

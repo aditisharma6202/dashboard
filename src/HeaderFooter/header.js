@@ -16,7 +16,7 @@ const Navbutton=({title,icon,data})=>{
             </div>
         </button>
         {dropdown&&
-        data.map((info)=>{return( <Link to={'/'} className='nav-link d-flex gap-2 p-3 px-4 bg-light-blue' >{info.icon}{info.title}</Link>);})}
+        data.map((info)=>{return( <Link to={`/${info.navlink}`} className='nav-link d-flex gap-2 p-3 px-4 bg-light-blue' >{info.icon}{info.title}</Link>);})}
           
         
         </div>
@@ -24,28 +24,28 @@ const Navbutton=({title,icon,data})=>{
 }
 
 const Navlink=( {isOpen})=>{
-    const salesData=[{icon:<i class="bi bi-people-fill"></i>,title:'Customer'},
-    {icon:<i class="bi bi-file-earmark-break-fill"></i>, title:'Quotions'},
-    {icon:<i class="bi bi-card-text"></i>, title:'Invoices'},
-    {icon:<i class="bi bi-globe-central-south-asia"></i>, title:'E-Invoices'},
-    {icon:<i class="bi bi-receipt-cutoff"></i>, title:'E-Way bills'},
-    {icon:<i class="bi bi-stickies-fill"></i>, title:'Sales Orders'},
-    {icon:<i class="bi bi-card-heading"></i>, title:'Delivery Challans'},
-    {icon:<i class="bi bi-credit-card-fill"></i>, title:'Credit notes'},
-    {icon:<i class="bi bi-currency-rupee"></i>, title:'Receivables'},
-    {icon:<i class="bi bi-clock-fill"></i>, title:'Payment received'}
+    const salesData=[{icon:<i class="bi bi-people-fill"></i>,title:'Customer',navlink:'/'},
+    {icon:<i class="bi bi-file-earmark-break-fill"></i>, title:'Quotions',navlink:'/'},
+    {icon:<i class="bi bi-card-text"></i>, title:'Invoices',navlink:'/'},
+    {icon:<i class="bi bi-globe-central-south-asia"></i>, title:'E-Invoices',navlink:'/'},
+    {icon:<i class="bi bi-receipt-cutoff"></i>, title:'E-Way bills',navlink:'/'},
+    {icon:<i class="bi bi-stickies-fill"></i>, title:'Sales Orders',navlink:'/'},
+    {icon:<i class="bi bi-card-heading"></i>, title:'Delivery Challans',navlink:'/'},
+    {icon:<i class="bi bi-credit-card-fill"></i>, title:'Credit notes',navlink:'/'},
+    {icon:<i class="bi bi-currency-rupee"></i>, title:'Receivables',navlink:'/'},
+    {icon:<i class="bi bi-clock-fill"></i>, title:'Payment received',navlink:'/'}
 
 ]
-const InventoryData=[{icon:<i class="bi bi-basket3-fill"></i>,title:'Item List'},
-{icon:<i class="bi bi-file-earmark-break-fill"></i>, title:'Item Groups'},
-{icon:<i class="bi bi-grid-fill"></i>, title:'Stocks/Inventory'},
-{icon:<i class="bi bi-calculator-fill"></i>, title:'Stocks Adjustments'},
+const InventoryData=[{icon:<i class="bi bi-basket3-fill"></i>,title:'Product',navlink:'product'},
+{icon:<i class="bi bi-file-earmark-break-fill"></i>, title:'Item Groups',navlink:'product'},
+{icon:<i class="bi bi-grid-fill"></i>, title:'Stocks/Inventory',navlink:'product'},
+{icon:<i class="bi bi-calculator-fill"></i>, title:'Stocks Adjustments',navlink:'product'},
 ]
 
-const PurchaseData=[{icon:<i class="bi bi-basket3-fill"></i>,title:'Item List'},
-{icon:<i class="bi bi-file-earmark-break-fill"></i>, title:'Item Groups'},
-{icon:<i class="bi bi-grid-fill"></i>, title:'Stocks/Inventory'},
-{icon:<i class="bi bi-calculator-fill"></i>, title:'Stocks Adjustments'},
+const PurchaseData=[{icon:<i class="bi bi-basket3-fill"></i>,title:'Item List',navlink:'/'},
+{icon:<i class="bi bi-file-earmark-break-fill"></i>, title:'Item Groups',navlink:'/'},
+{icon:<i class="bi bi-grid-fill"></i>, title:'Stocks/Inventory',navlink:'/'},
+{icon:<i class="bi bi-calculator-fill"></i>, title:'Stocks Adjustments',navlink:'/'},
 ]
     
     
@@ -72,8 +72,8 @@ const LogoutMenu=({setSidemenu, menu})=>{
          
     </div>);
 }
-function Header() {
-const[isOpen, setisOpen]=useState(true)
+function Header({isOpen,setisOpen}) {
+
 const[isSidemenu , setSidemenu]= useState(false);
 const menu=[{icon:<i class="bi bi-house-check-fill"></i>, title:'Comapny Name'},
 {icon:<i class="bi bi-people-fill"></i>, title:'Manage User'},
