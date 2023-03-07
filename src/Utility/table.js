@@ -90,6 +90,7 @@ function CommanTable({
             minHeight: '25px',
              // override the row height
             padding:'0px',
+        
             width:'2rem',
             margin:'0'
         },
@@ -97,7 +98,8 @@ function CommanTable({
     headCells: {
       style: {
           backgroundColor:'#0B3966',
-          color:'white'
+          color:'white',
+          minHeight:'30px'
 
       },
   },
@@ -105,7 +107,8 @@ function CommanTable({
     cells: {
         style: {
             padding:'1px',
-            maxHeight:'25px'
+            maxHeight:'25px',
+            paddingRight:'4px'
         },
     },
 };
@@ -139,8 +142,9 @@ function CommanTable({
       <DataTable
         actions={
          
-         <div>
-          <button className="btn btn-success">Add</button>
+         <div className="d-flex">
+          <button className="btn btn-success p-1"> <i class="bi bi-plus-circle"></i> <span>ADD</span></button>
+          <button className="btn p-1">F2</button>
          </div>
         }
         data={data}
@@ -167,7 +171,7 @@ function CommanTable({
            <input
             type="text"
             placeholder="search"
-            className="col-6 w-25"
+            className="col-6"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />

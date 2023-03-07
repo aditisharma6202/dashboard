@@ -77,6 +77,26 @@ function ProductForm() {
          
         </div>
       </div>
+      <div className="col-12 px-3 py-1 form-bottom">
+        <div className="row gap-4">
+          <div className="col-2 text-light bg-primary">C.R. DATE-</div>
+          <div className="col-2 text-light bg-primary">M.D. DATE-</div>
+          <div className="col-2 text-light bg-primary">L.A.-</div>
+
+        </div>
+       
+
+      </div>
+      <div className="col-12 px-3 py-1 form-bottom">
+        <div className="row">
+          <button className="col-1 p-0 btn btn-light">
+            ADD
+          </button>
+          <button className="col-1 p-0 btn btn-secondary">
+          <i class="bi bi-heart-fill px-1"></i><span>F2</span>
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

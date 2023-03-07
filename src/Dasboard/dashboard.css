@@ -93,7 +93,9 @@ overflow-y: auto;
  align-items: center;
 }
 
-
+.bg-primary-color{
+    background-color:var(--primary-color);
+}
 .bg-aliceblue{
     background-color: aliceblue;
 }
@@ -104,10 +106,23 @@ overflow-y: auto;
 
 }
 .desktop-height-60vh{
-    max-height: 60vh;
+    max-height: 50vh;
     overflow-y: scroll;
    }
-   
+   .kDEcCH{
+    min-height: 0px  !important;
+   }
+   .kNUuTe{
+    min-height: 0px !important;
+    padding-top: 2px !important;
+   }
+   .iSAVrt{
+    min-height: 0px !important;
+   }
+   .form-bottom{
+    border-top: 2px solid black;
+    font-size: 0.77rem;
+   }
 @media (min-width:60em) {
     .only-desktop{
         display: block;
