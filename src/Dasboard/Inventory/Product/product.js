@@ -17,7 +17,7 @@ function Product() {
    
     return ( <>
     <Header />
-    <div className='dash-active mt-5 pt-2'>
+    <div className='dash-active  pt-2'>
         <Breadcrumb catagory={'Inventory'} subcatagory={'Product'}/>
         <div className='col-12 '>
             <div className='only-desktop'>
@@ -33,7 +33,7 @@ function Product() {
             })}
            </div> 
            </div>
-          <div className='row mt-5'>
+          <div className='row mt-1'>
             <div className='col-md-8 col-12'>
                 <div className='card'>
                     <div className='border-black'>

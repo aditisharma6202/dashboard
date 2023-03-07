@@ -114,15 +114,10 @@ function CommanTable({
     <>
       <DataTable
         actions={
-          <CSVLink
-            data={data}
-            onClick={() => {
-              console.log("You click the link"); // 👍🏻 Your click handling logic
-            }}
-            className="btn btn-info"
-          >
-            export{" "}
-          </CSVLink>
+         
+         <div>
+          <button className="btn btn-success">Add</button>
+         </div>
         }
         data={data}
         columns={columns}
@@ -132,7 +127,7 @@ function CommanTable({
         onChangePage={(pageid) => setPage(pageid)}
         onRowClicked={(row)=> setPopup(row)}
         onChangeRowsPerPage={(pp) => setRow(pp)}
-        pagination
+        //pagination
         responsive={true}
         progressPending={data.length === 0 && "pending"}
         striped
@@ -142,13 +137,16 @@ function CommanTable({
         paginationTotalRows={total}
         paginationRowsPerPageOptions={[10, 20, 30, 50, 100, 200, 500]}
         subHeaderComponent={
-          <input
+          <>
+           <input
             type="text"
             placeholder="search"
-            className="form-control w-25"
+            className="col-6 w-25"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
+          </>
+         
         }
       />
     </>
