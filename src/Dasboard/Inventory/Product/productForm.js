@@ -1,44 +1,84 @@
-import React from 'react';
-import FormData from '../../../Utility/FormData';
+import React from "react";
+import FormData from "../../../Utility/FormData";
 function ProductForm() {
-    return ( <div className='pt-4 productform'>
-      <div className='row justify-content-around'>
-        <div className='col-sm-4 col-12 mt-3 bg-aliceblue'>
-        <h6 className='title'>Price Details</h6>
-      <form>
-     <FormData label={'MRP'} placeholder={'0.00'} type={'string'} />
-     <FormData label={'Pur. Rate'} placeholder={'0.00'} type={'string'} />
-     <FormData label={'Cost'} placeholder={'0.00'} type={'string'} />
-     <FormData label={'Pur. Disc'} placeholder={'0.00'} type={'string'} />
-     <FormData label={'Rate'} placeholder={'0.00'} type={'string'} />
-     <FormData label={'Margin'} placeholder={'0.00'} type={'string'} />
-      </form>
-        
+  return (
+    <div className="pt-2  ">
+      <div className="d-flex row justify-content-around p-0 m-1">
+        <div className="col-sm-4 col-12 p-2 bg-aliceblue">
+          <h6 className="title">Price Details</h6>
+          <div className="row">
+            <div className="d-flex space-between row mt-1">
+              <div className="text-muted col-6">MRP</div>
+              <div className="col-6">0.00</div>
+            </div>
+            <div className="d-flex space-between row mt-1">
+              <div className="text-muted col-6">Cost</div>
+              <div className="col-6">0.00</div>
+            </div>{" "}
+            <div className="d-flex space-between row mt-1">
+              <div className="text-muted col-6">Pur. Rate</div>
+              <div className="col-6">0.00</div>
+            </div>{" "}
+            <div className="d-flex space-between row mt-1">
+              <div className="text-muted col-6">Rate</div>
+              <div className="col-6">0.00</div>
+            </div>{" "}
+            <div className="d-flex space-between row mt-1">
+              <div className="text-muted col-6">Margin</div>
+              <div className="col-6">0.00</div>
+            </div>
+          </div>
         </div>
-        <div className='col-sm-4 col-12 mt-3 bg-aliceblue'>
-        <h6 className='title'>Tax Detail</h6>
-      <form>
-     <FormData label={'HSN/SAC'} placeholder={'0.00'} type={'string'} />
-     <FormData label={'IGST %'} placeholder={'0.00'} type={'string'} />
-     <FormData label={'CGST'} placeholder={'0.00'} type={'string'} />
-     <FormData label={'SGST'} placeholder={'0.00'} type={'string'} />
-     
-      </form>   
+        <div className="col-sm-4 col-12  bg-aliceblue p-2">
+          <h6 className="title">Tax Detail</h6>
+          <div className="row ">
+            <div className="d-flex space-between row mt-1">
+              <div className="text-muted col-6">HSN/SAC</div>
+              <div className="col-6">0.00</div>
+            </div>{" "}
+            <div className="d-flex space-between row mt-1">
+              <div className="text-muted col-6">IGST %</div>
+              <div className="col-6">0.00</div>
+            </div>{" "}
+            <div className="d-flex space-between row mt-1">
+              <div className="text-muted col-6">CGST</div>
+              <div className="col-6">0.00</div>
+            </div>{" "}
+            <div className="d-flex space-between row mt-1">
+              <div className="text-muted col-6">SGST</div>
+              <div className="col-6">0.00</div>
+            </div>
+          </div>
         </div>
-        <div className='col-sm-3 col-12 mt-3 bg-aliceblue'>
-        <h6 className='title'>Other Detail</h6>
-      <form>
-     <FormData label={'Unit 1/2'} placeholder={'0.00'} type={'string'} />
-     <FormData label={'Conversion'} placeholder={'0.00'} type={'string'} />
-     <FormData label={'Group'} placeholder={'0.00'} type={'string'} />
-     <FormData label={'Category'} placeholder={'0.00'} type={'string'} />
-     <FormData label={'Rack'} placeholder={'0.00'} type={'string'} />
-    
-      </form>
-        
+        <div className="col-sm-4 col-12  p-2 bg-aliceblue">
+          <h6 className="title">Other Detail</h6>
+          <div className="row">
+            <div className="d-flex space-between row mt-1">
+              <div className="text-muted col-8">Unit 1/2</div>
+              <div className="col-4">0.00</div>
+            </div>
+            <div className="d-flex space-between row mt-1">
+              <div className="text-muted col-8">Conversation</div>
+              <div className="col-4">0.00</div>
+            </div>
+            <div className="d-flex space-between row mt-1">
+              <div className="text-muted col-8">Group</div>
+              <div className="col-4">0.00</div>
+            </div>
+            <div className="d-flex space-between row mt-1">
+              <div className="text-muted col-8">Category</div>
+              <div className="col-4">0.00</div>
+            </div>
+            <div className="d-flex space-between row mt-1">
+            <div className="text-muted col-8">Rack</div>
+            <div className="col-4">0.00</div>
+          </div>
+          </div>
+         
         </div>
-        </div>
-    </div> );
+      </div>
+    </div>
+  );
 }
 
 export default ProductForm;

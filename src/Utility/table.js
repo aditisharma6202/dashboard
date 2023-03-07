@@ -84,7 +84,31 @@ function CommanTable({
   } else {
     console.log("empty string");
   }
+  const customStyles = {
+    rows: {
+        style: {
+            minHeight: '25px',
+             // override the row height
+            padding:'0px',
+            width:'2rem',
+            margin:'0'
+        },
+    },
+    headCells: {
+      style: {
+          backgroundColor:'#0B3966',
+          color:'white'
 
+      },
+  },
+   
+    cells: {
+        style: {
+            padding:'1px',
+            maxHeight:'25px'
+        },
+    },
+};
   //setting up search function
 //   const searchData = async () => {
 //     if (search && pageId) {
@@ -128,9 +152,11 @@ function CommanTable({
         onRowClicked={(row)=> setPopup(row)}
         onChangeRowsPerPage={(pp) => setRow(pp)}
         //pagination
+        customStyles={customStyles}
         responsive={true}
         progressPending={data.length === 0 && "pending"}
         striped
+        
         paginationServer
         selectableRows
         subHeader

@@ -103,6 +103,10 @@ overflow-y: auto;
    border-top:2px solid grey
 
 }
+.desktop-height-60vh{
+    max-height: 60vh;
+    overflow-y: scroll;
+   }
    
 @media (min-width:60em) {
     .only-desktop{
@@ -111,12 +115,9 @@ overflow-y: auto;
     .only-mobile{
         display: none;
     }
-    .desktop-height-60vh{
-     max-height: 60vh;
-     overflow-y: scroll;
-    }
+   
     .dash-active{
-        margin-left: 16rem;
+        margin-left: 1rem;
         margin-right: 1rem;
     }
     
