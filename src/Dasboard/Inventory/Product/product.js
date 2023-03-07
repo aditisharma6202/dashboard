@@ -36,7 +36,7 @@ function Product() {
           <div className='row mt-5'>
             <div className='col-md-8 col-12'>
                 <div className='card'>
-                    <div className='card-body'>
+                    <div className='border-black'>
                         <div className='desktop-height-60vh'>
                        <ProductTable/>
                        </div>
