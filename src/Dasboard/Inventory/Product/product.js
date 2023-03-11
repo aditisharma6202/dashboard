@@ -26,7 +26,7 @@ function Product() {
                 return(
                     <div className='col formlink'>
                     <Link to={info.formlink} className='link'>{info.title}</Link>
-                    <button className='btn text-danger'><i class="bi bi-x-circle"></i></button>
+                    <button className='btn text-danger p-0'><i class="bi bi-x-circle"></i></button>
                 </div>
                 );
                

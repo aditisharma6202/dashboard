@@ -87,28 +87,30 @@ function CommanTable({
   const customStyles = {
     rows: {
         style: {
-            minHeight: '25px',
-             // override the row height
-            padding:'0px',
-        
-            width:'2rem',
-            margin:'0'
+            minHeight: '15px',
+           
         },
     },
     headCells: {
       style: {
-          backgroundColor:'#0B3966',
-          color:'white',
-          minHeight:'30px'
-
+          // backgroundColor:'#0B3966',
+          // color:'white',
+          // minHeight:'15px',
+        paddingTop:'5px',
+          fontSize:'16px',
+          textTransform: 'capitalize',
       },
   },
    
     cells: {
         style: {
-            padding:'1px',
-            maxHeight:'25px',
-            paddingRight:'4px'
+            // padding:'1px',
+             maxHeight:'30px',
+             paddingRight:'4px',
+             fontSize:'12px',
+            borderRight:'2px solid #0000001c',
+           
+           
         },
     },
 };
@@ -159,7 +161,7 @@ function CommanTable({
         customStyles={customStyles}
         responsive={true}
         progressPending={data.length === 0 && "pending"}
-        striped
+        striped={true}
         
         paginationServer
         selectableRows

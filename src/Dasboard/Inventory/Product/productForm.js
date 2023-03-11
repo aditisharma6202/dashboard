@@ -1,5 +1,13 @@
 import React from "react";
 import FormData from "../../../Utility/FormData";
+const Detail=(props)=>{
+  return(<>
+ <div className="d-flex space-between row mt-1">
+              <div className="text-muted col-6">{props.detailOne} </div>
+              <div className="col-6">{props.detailTwo}</div>
+            </div>
+  </>);
+}
 function ProductForm() {
   return (
     <div className="pt-2  ">
@@ -7,72 +15,30 @@ function ProductForm() {
         <div className="col-sm-4 col-12 p-2 bg-aliceblue">
           <h6 className="title">Price Details</h6>
           <div className="row">
-            <div className="d-flex space-between row mt-1">
-              <div className="text-muted col-6">MRP</div>
-              <div className="col-6">0.00</div>
-            </div>
-            <div className="d-flex space-between row mt-1">
-              <div className="text-muted col-6">Cost</div>
-              <div className="col-6">0.00</div>
-            </div>{" "}
-            <div className="d-flex space-between row mt-1">
-              <div className="text-muted col-6">Pur. Rate</div>
-              <div className="col-6">0.00</div>
-            </div>{" "}
-            <div className="d-flex space-between row mt-1">
-              <div className="text-muted col-6">Rate</div>
-              <div className="col-6">0.00</div>
-            </div>{" "}
-            <div className="d-flex space-between row mt-1">
-              <div className="text-muted col-6">Margin</div>
-              <div className="col-6">0.00</div>
-            </div>
+           <Detail detailOne={'MRP'} detailTwo={'0.00'}/>
+           <Detail detailOne={'Cost'} detailTwo={'0.00'}/>
+           <Detail detailOne={'Pur. Rate'} detailTwo={'0.00'}/>
+           <Detail detailOne={'Rate'} detailTwo={'0.00'}/>
+           <Detail detailOne={'Margin'} detailTwo={'0.00'}/>
           </div>
         </div>
         <div className="col-sm-4 col-12  bg-aliceblue p-2">
           <h6 className="title">Tax Detail</h6>
           <div className="row ">
-            <div className="d-flex space-between row mt-1">
-              <div className="text-muted col-6">HSN/SAC</div>
-              <div className="col-6">0.00</div>
-            </div>{" "}
-            <div className="d-flex space-between row mt-1">
-              <div className="text-muted col-6">IGST %</div>
-              <div className="col-6">0.00</div>
-            </div>{" "}
-            <div className="d-flex space-between row mt-1">
-              <div className="text-muted col-6">CGST</div>
-              <div className="col-6">0.00</div>
-            </div>{" "}
-            <div className="d-flex space-between row mt-1">
-              <div className="text-muted col-6">SGST</div>
-              <div className="col-6">0.00</div>
-            </div>
+          <Detail detailOne={'HSN/SAC'} detailTwo={'0.00'}/>
+          <Detail detailOne={'IGST %'} detailTwo={'0.00'}/>
+          <Detail detailOne={'CGST'} detailTwo={'0.00'}/>
+          <Detail detailOne={'SGST'} detailTwo={'0.00'}/>
           </div>
         </div>
         <div className="col-sm-4 col-12  p-2 bg-aliceblue">
           <h6 className="title">Other Detail</h6>
           <div className="row">
-            <div className="d-flex space-between row mt-1">
-              <div className="text-muted col-8">Unit 1/2</div>
-              <div className="col-4">0.00</div>
-            </div>
-            <div className="d-flex space-between row mt-1">
-              <div className="text-muted col-8">Conversation</div>
-              <div className="col-4">0.00</div>
-            </div>
-            <div className="d-flex space-between row mt-1">
-              <div className="text-muted col-8">Group</div>
-              <div className="col-4">0.00</div>
-            </div>
-            <div className="d-flex space-between row mt-1">
-              <div className="text-muted col-8">Category</div>
-              <div className="col-4">0.00</div>
-            </div>
-            <div className="d-flex space-between row mt-1">
-            <div className="text-muted col-8">Rack</div>
-            <div className="col-4">0.00</div>
-          </div>
+            <Detail detailOne={'Unit 1/2'} detailTwo={'0.00'}/>
+            <Detail detailOne={'Conversation'} detailTwo={'0.00'}/>
+            <Detail detailOne={'Group'} detailTwo={'0.00'}/>
+            <Detail detailOne={'Category'} detailTwo={'0.00'}/>
+            <Detail detailOne={'Rack'} detailTwo={'0.00'}/>
           </div>
          
         </div>
