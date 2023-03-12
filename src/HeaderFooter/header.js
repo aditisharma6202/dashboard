@@ -80,7 +80,7 @@ const menu=[{icon:<i class="bi bi-house-check-fill"></i>, title:'Comapny Name'},
 {icon:<i class="bi bi-gear-fill"></i>, title:'App Settings'},
 {icon:<i class="bi bi-power text-danger"></i>, title:<span className='text-danger'>Logout</span>}]
     return (
-     <div className='header pt-1'>
+     <div className='header'>
        
         <div className='display-flex justify-content-between text-center pt-1 px-2'>
             <div classname='d-flex text-center text-light' style={{fontSize:'1.2rem', display:'flex' , gap:'1rem'}}>

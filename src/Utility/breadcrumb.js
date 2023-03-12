@@ -1,7 +1,7 @@
 import React from 'react';
 function Breadcrumb({catagory, subcatagory}) {
     return (
-        <div class="mb-4">
+        <div>
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">

@@ -33,7 +33,7 @@ function Product() {
             })}
            </div> 
            </div>
-          <div className='row mt-1'>
+          <div className='row'>
             <div className='col-md-8 col-12'>
                 <div className='card'>
                     <div className='border-black'>
@@ -52,7 +52,7 @@ function Product() {
                             Search Product
                         </h5>
                         <div className='col d-flex mt-3'>
-                            <input/><button className='btn btn-success'>Search</button>
+                            <input/><button className='btn btn-success btn-left-border-none'>Search</button>
                         </div>
                     </div>
                 </div>

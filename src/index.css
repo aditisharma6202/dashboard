@@ -11,9 +11,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  overflow-y: hidden;
+ 
 }
-
+@media (min-width:60em) {
+  body{
+    overflow-y: hidden;
+  }
+}
 code {
   font-family: 'Roboto', sans-serif;
 }

@@ -145,8 +145,8 @@ function CommanTable({
         actions={
          
          <div className="d-flex">
-          <button className="btn btn-success p-1"> <i class="bi bi-plus-circle"></i> <span>ADD</span></button>
-          <button className="btn p-1">F2</button>
+          <button className="btn btn-sm btn-success p-1 btn-one btn-right-border-none"> <i class="bi bi-plus-circle"></i> <span>ADD</span></button>
+          <button className="btn btn-sm btn-light p-1 btn-f2 btn-left-border-none">F2</button>
          </div>
         }
         data={data}

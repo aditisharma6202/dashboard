@@ -1,7 +1,5 @@
 .dashboard{
     position: relative;
-
-
 }
 .header{
     position: fixed;
@@ -10,7 +8,7 @@
     right:0;
     left:0;
     z-index: 1000;
-    min-height: 45px;
+    min-height: 30px;
   
 }
 .display-flex{
@@ -23,6 +21,25 @@ display: none;
 .only-mobile{
 display: block;
 }
+/* custom button */
+.btn-right-border-none{
+border-top-right-radius: 0px !important;
+border-bottom-right-radius: 0px !important;
+}
+.btn-left-border-none{
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important; 
+}
+.btn-f2{
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+.btn-f2:hover{
+     color:blue;
+}
+/* custom input class */
+/* input:focus-visible {
+    box-shadow: 0 !important;
+} */
 /* header */
 .bi-tag-fill{
 color: var(--bs-teal);
@@ -32,7 +49,7 @@ font-size: large;
     position: fixed;
     top:0;
     min-width: 14rem;
-    margin-top: 45px;
+    margin-top: 32px;
     background-color: var(--secondary-color);
     color:var(--primary-color);
 height: 100%;
@@ -50,7 +67,8 @@ overflow-y: auto;
     background-color: aliceblue;
 }
 .border-black{
-    border: 2px solid black;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 .nav-link{
     width: 14rem;
@@ -74,10 +92,7 @@ overflow-y: auto;
     color: white;
     background-color: var(--primary-color);
 }
-.dash-active{
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
+
 
 .link{
    color:white;
@@ -109,7 +124,7 @@ overflow-y: auto;
 
 }
 .desktop-height-60vh{
-    max-height: 57vh;
+    max-height: 56vh;
     overflow-y: scroll;
    }
    .kDEcCH{
@@ -123,11 +138,18 @@ overflow-y: auto;
    .iSAVrt{
     min-height: 0px !important;
    }
+   .rdt_TableRow:hover{
+    background-color: rgba(77, 176, 252, 0.263) !important;
+   }
+ .iHsqzx{
+    background-color: white !important;
+ }
  
    .form-bottom{
     border-top: 2px solid black;
     font-size: 0.65rem;
    }
+   
 @media (min-width:60em) {
     .only-desktop{
         display: block;
@@ -138,6 +160,7 @@ overflow-y: auto;
    
     .dash-active{
         margin-left: 1rem;
+       
         margin-right: 1rem;
     }
     
