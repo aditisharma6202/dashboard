@@ -7,6 +7,7 @@ import { Routes } from "react-router";
 import reportWebVitals from './reportWebVitals';
 import DashboardMain from './Dasboard';
 import Product from './Dasboard/Inventory/Product/product';
+import GroupType from './Dasboard/Inventory/GroupType/groupType';
 
 
 
@@ -20,6 +21,7 @@ root.render(
         <Routes>
           <Route path="/" element={<DashboardMain />} />
           <Route path="/product" element={ <Product/>} />
+          <Route path="/grouptype" element={ <GroupType/>} />
         </Routes>
       
     {/* </ScrollIntoView> */}

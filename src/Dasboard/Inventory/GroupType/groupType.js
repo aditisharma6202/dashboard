@@ -1,9 +1,9 @@
 import React from 'react';
+import Header from '../../../HeaderFooter/header';
 import axios from 'axios';
 import CommanTable from '../../../Utility/table';
-
 import { useEffect, useState } from 'react';
-function ProductTable(props) {
+function GroupType() {
     const [data, setData] = useState([]);
     //const [search, setSearch] = useState("");
     // const [filterdata, setFilterdata] = useState([]);
@@ -32,14 +32,14 @@ function ProductTable(props) {
     };
     useEffect(() => {
       getData();
-    }, [props.reload, page, row]);
+    }, [ page, row]);
 
 
   
     
-    return (
-      <>
-        <CommanTable
+    return ( <>
+    <Header/>
+    <CommanTable
           data={data}
           title="Product Master"
           pageId="ProductTable"
@@ -51,11 +51,7 @@ function ProductTable(props) {
           setRow={(val) => setRow(val)}
           actions={{}}
         />
-       
-      </>
-    );
+    </> );
 }
 
-export default ProductTable;
-
-
+export default GroupType;
