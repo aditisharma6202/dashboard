@@ -103,7 +103,7 @@ z-index: 200;
     top:2rem;
   border-radius: 8px;
     background-color: var(--primary-color);
-
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     color:white;
 }
 .nested-dropdown-menu-link{
@@ -136,6 +136,13 @@ z-index: 200;
 }
 .bg-aliceblue{
     background-color: aliceblue;
+}
+
+.title{
+    border-bottom: 1px solid black;
+}
+.overflow-x-hidden{
+    overflow-x: hidden;
 }
 /* product form */
 .productform{

@@ -39,7 +39,14 @@ function GroupType() {
     
     return ( <>
     <Header/>
-    <CommanTable
+    <div className='col-12'>
+      <div className='row mt-5 mx-2'>
+        
+        <div className='col-md-8 col-12'>
+        <div className='card'>
+                    <div className='border-black'>
+                        <div className='desktop-height-60vh'>
+        <CommanTable
           data={data}
           title="Product Master"
           pageId="ProductTable"
@@ -50,7 +57,17 @@ function GroupType() {
           total={total}
           setRow={(val) => setRow(val)}
           actions={{}}
+          f2link={'group'}
+
         />
+        </div>
+        </div>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+    
     </> );
 }
 

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import DataTable from "react-data-table-component";
 import { CSVLink } from "react-csv";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 function CommanTable({
   data,
@@ -12,7 +13,9 @@ function CommanTable({
   setPage,
   pageId,
   setTotal,
-  setPopup
+  setPopup,
+  f2link
+
 }) {
   //variable declaration
   let columns;
@@ -144,10 +147,10 @@ function CommanTable({
       <DataTable
         actions={
          
-         <div className="d-flex">
+         <Link to={`/${f2link}`} className="d-flex link">
           <button className="btn btn-sm btn-success p-1 btn-one btn-right-border-none"> <i class="bi bi-plus-circle"></i> <span>ADD</span></button>
           <button className="btn btn-sm btn-light p-1 btn-f2 btn-left-border-none">F2</button>
-         </div>
+         </Link>
         }
         data={data}
         columns={columns}
