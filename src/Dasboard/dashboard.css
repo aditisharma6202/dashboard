@@ -101,7 +101,7 @@ position:relative;
 z-index: 200;
     left:9rem;
     top:2rem;
-  border-radius: 12px;
+  border-radius: 8px;
     background-color: var(--primary-color);
 
     color:white;

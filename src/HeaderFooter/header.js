@@ -12,9 +12,9 @@ const NestedDropdownData=({info})=>{
     <div className="nested-dropdown-menu">
        {
         nestedArray.map((info)=>{
-            return(<>
-            <div className="nested-dropdown-menu-link p-2"> {info.title}</div>
-            </>);
+            return(<Link to={`/${info.link}`}  className='link'>
+            <div className='nested-dropdown-menu-link p-2'> {info.title}</div>
+            </Link>);
         })
        }
 
