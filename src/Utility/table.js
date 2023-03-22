@@ -162,7 +162,7 @@ function CommanTable({
         actions={
          
          <Link to={`/${f2link}`} className="d-flex link">
-          <button className="btn btn-sm btn-success p-1 btn-one btn-right-border-none"> <i class="bi bi-plus-circle"></i> <span>ADD</span></button>
+          <button className="btn btn-sm btn-success p-1 btn-one btn-right-border-none"> <i class="bi bi-plus-circle"></i> <span className="px-2"></span></button>
           <button className="btn btn-sm btn-light p-1 btn-f2 btn-left-border-none">F2</button>
          </Link>
         }
