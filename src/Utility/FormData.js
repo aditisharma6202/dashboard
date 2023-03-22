@@ -81,8 +81,8 @@ function FormData({ title, subTitle, data}) {
                           <div className='m-2 row justify-content-center align-items-center'>
                            <div className='col-md-6 col-12'>
                             <div className='row gap-2 justify-content-center align-items-center'>
-                            <button className='btn btn-info col'>SAVE</button>
-                            <button className='btn btn-danger col'>CANCEL</button>
+                            <button className='btn btn-info btn-sm col'>SAVE</button>
+                            <button className='btn btn-danger btn-sm col'>CANCEL</button>
                             </div>
                            </div>
                           </div>

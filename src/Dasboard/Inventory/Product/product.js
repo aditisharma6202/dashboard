@@ -5,6 +5,7 @@ import Breadcrumb from '../../../Utility/breadcrumb';
 import { Link } from 'react-router-dom';
 import ProductTable from './productTable';
 import ProductForm from './productForm';
+import Footer from '../../../HeaderFooter/footer';
 const formlinks=[{title:'HSN',formlink:'/'},
 {title:'HSN',formlink:'/'},
 {title:'HSN',formlink:'/'},
@@ -21,7 +22,7 @@ function Product() {
         <Breadcrumb catagory={'Inventory'} subcatagory={'Product'}/>
         <div className='col-12 '>
             <div className='only-desktop'>
-            <div className='row'>
+            <div className='row p-0 m-0'>
             {formlinks.map((info)=>{
                 return(
                     <div className='col formlink'>
@@ -33,7 +34,7 @@ function Product() {
             })}
            </div> 
            </div>
-          <div className='row'>
+          <div className='row mt-2'>
             <div className='col-md-8 col-12'>
                 <div className='card'>
                     <div className='border-black'>
@@ -46,7 +47,7 @@ function Product() {
                 </div>
             </div>
             <div className='col-md-4 col-12'>
-                <div className='card bg-aliceblue vh-100'>
+                <div className='card bg-aliceblue'>
                     <div className='card-body'>
                         <h5 className='title'>
                             Search Product
@@ -57,9 +58,13 @@ function Product() {
                     </div>
                 </div>
             </div>
+          
           </div>
+         
+
         </div>
     </div>
+    <Footer/>
     </> );
 }
 

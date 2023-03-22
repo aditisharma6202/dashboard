@@ -1,9 +1,9 @@
 import React from 'react';
+import Header from '../../../HeaderFooter/header';
 import axios from 'axios';
 import CommanTable from '../../../Utility/table';
-
 import { useEffect, useState } from 'react';
-function ProductTable(props) {
+function Group() {
     const [data, setData] = useState([]);
     //const [search, setSearch] = useState("");
     // const [filterdata, setFilterdata] = useState([]);
@@ -32,16 +32,23 @@ function ProductTable(props) {
     };
     useEffect(() => {
       getData();
-    }, [props.reload, page, row]);
+    }, [ page, row]);
 
 
   
     
-    return (
-      <>
+    return ( <>
+    <Header/>
+    <div className='col-12'>
+      <div className='row mt-5 mx-2'>
+        
+        <div className='col-md-8 col-12'>
+        <div className='card'>
+                    <div className='border-black'>
+                        <div className='desktop-height-60vh'>
         <CommanTable
           data={data}
-          title={<div className='text-primary-color table-title fw-bold'>PRODUCT MASTER</div>}
+          title="Product Master"
           pageId="ProductTable"
           setPage={(val) => setPage(val)}
           row={row}
@@ -50,12 +57,17 @@ function ProductTable(props) {
           total={total}
           setRow={(val) => setRow(val)}
           actions={{}}
+          f2link={'groupform'}
+
         />
-       
-      </>
-    );
+        </div>
+        </div>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    </> );
 }
-
-export default ProductTable;
-
-
+export default Group;

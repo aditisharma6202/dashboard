@@ -108,7 +108,7 @@ function CommanTable({
     cells: {
         style: {
             // padding:'1px',
-             maxHeight:'30px',
+             maxHeight:'26px',
              paddingRight:'4px',
              fontSize:'12px',
             borderRight:'2px solid #0000001c',

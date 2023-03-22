@@ -6,14 +6,13 @@ const NestedDropdownData=({info})=>{
     //console.log('nested info'+  JSON.stringify(info.data))
     //console.log('nested info key'+Object.keys(info.data) )
     const nestedArray = info.data[Object.keys(info.data)]
-    console.log('nestedArray'+ nestedArray)
-   
+  
     return(
-    <div className="nested-dropdown-menu">
+    <div className="px-4">
        {
         nestedArray.map((info)=>{
-            return(<Link to={`/${info.link}`}  className='link'>
-            <div className='nested-dropdown-menu-link p-2'> {info.title}</div>
+            return(<Link to={`/${info.link}`}  className='nested-links ' >
+            <div className=' p-2'> {info.title}</div>
             </Link>);
         })
        }
@@ -37,6 +36,7 @@ const NestedDropdown=({info})=>{
  }
    else{
     return(
+      <>
         <div className="nav-link d-flex gap-2  px-4 bg-light-blue justify-content-between nested-dropdown-btn">
   <div>
 
@@ -49,9 +49,10 @@ const NestedDropdown=({info})=>{
         </button>
         </div>
         }
-        {opennesteddropdown&&<NestedDropdownData info={info}/>}
+       
         </div>
-        
+        {opennesteddropdown&&<NestedDropdownData info={info}/>}
+        </>
     )
    }
 }

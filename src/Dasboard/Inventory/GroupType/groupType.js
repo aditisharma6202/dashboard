@@ -57,7 +57,7 @@ function GroupType() {
           total={total}
           setRow={(val) => setRow(val)}
           actions={{}}
-          f2link={'group'}
+          f2link={'grouptypeform'}
 
         />
         </div>

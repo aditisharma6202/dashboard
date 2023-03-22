@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import DashboardMain from './Dasboard';
 import Product from './Dasboard/Inventory/Product/product';
 import GroupType from './Dasboard/Inventory/GroupType/groupType';
-import GroupF2 from './Dasboard/Inventory/GroupType/groupF2';
+import GroupF2 from './Dasboard/Inventory/GroupType/groupformF2';
 
 
 
@@ -23,7 +23,9 @@ root.render(
           <Route path="/" element={<DashboardMain />} />
           <Route path="/product" element={ <Product/>} />
           <Route path="/grouptype" element={ <GroupType/>} />
-          <Route path="/group" element={ <GroupF2/>} />
+          <Route path="/grouptypeform" element={ <GroupF2/>} />
+        
+
 
         </Routes>
       

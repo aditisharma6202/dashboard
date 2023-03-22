@@ -4,8 +4,8 @@ import FormData from '../../../Utility/FormData';
 
 
 function GroupF2() {
- const   data=[{label:'GROUP TYPE*' , type:0, placeholder:''},
-    {label:'STATUS*' ,type:1, selectdata: [{value:1, name:'Yes'},{value:2,name:'No'}]},
+ const   data=[{label:<>Group TYPE<span className='text-danger'>*</span></> , type:0, placeholder:''},
+    {label:<>STATUS<span className='text-danger'>*</span></> ,type:1, selectdata: [{value:1, name:'Yes'},{value:2,name:'No'}]},
    
 ]
     return ( <div>

@@ -54,6 +54,7 @@ font-size: large;
     color:var(--primary-color);
 height: 100%;
 overflow-y: auto;
+overflow-x: visible;
     left:0;
     transition: all ease-in 200ms;
     
@@ -99,19 +100,21 @@ position:relative;
 
     position:absolute;
 z-index: 200;
-    left:9rem;
+    left:8rem;
     top:2rem;
   border-radius: 8px;
     background-color: var(--primary-color);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     color:white;
 }
-.nested-dropdown-menu-link{
-    min-width: 5rem;
-}
-.nested-dropdown-menu-link:hover{
+.nested-links{
     background-color:var(--secondary-color);
-    color:var(--primary-color)
+    color:var(--primary-color);
+    text-decoration: none; 
+ 
+}
+.nested-links:hover{
+   color:blue
 }   
 
 .link{
@@ -121,6 +124,14 @@ z-index: 200;
 .link:hover{
     color: blue;
 }
+/*footer*/
+.footer{
+    position: fixed;
+    bottom: 0;
+    left:10px;
+    right:0px;
+    min-height: 20px;
+}
  .formlink{
  background-color:var(--primary-color);
  color: white;
@@ -128,7 +139,8 @@ z-index: 200;
  display: flex;
  justify-content: space-between;
  align-items: center;
- font-size: 0.8rem;
+ font-size: 0.7rem;
+
 }
 
 .bg-primary-color{
@@ -137,7 +149,9 @@ z-index: 200;
 .bg-aliceblue{
     background-color: aliceblue;
 }
-
+.table-title{
+    font-size: 1rem;
+}
 .title{
     border-bottom: 1px solid black;
 }
@@ -151,7 +165,7 @@ z-index: 200;
 
 }
 .desktop-height-60vh{
-    max-height: 56vh;
+    max-height: 50vh;
     overflow-y: scroll;
    }
    .kDEcCH{
@@ -176,7 +190,13 @@ z-index: 200;
     border-top: 2px solid black;
     font-size: 0.65rem;
    }
-   
+ .text-primary-color{
+    color:var(--primary-color)
+ }
+ .rdt_TableHeader{
+    border-bottom: 1px solid var(--primary-color);
+    max-height: 30px;
+ }
 @media (min-width:60em) {
     .only-desktop{
         display: block;
