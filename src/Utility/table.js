@@ -41,19 +41,31 @@ function CommanTable({
             return <>{status}</>;
           },
           wrap: true,
+
         };
       }
-      return {
+      else if(key==='id'){
+        return{
+          name:key,
+          selector:(row)=>row[key],
+          width:'3rem'
+        }
+      }
+    else  return {
         name: key,
         selector: (row) => row[key],
-       // wrap: true,
+     
+      // wrap: true,
        
         conditionalCellStyles: [
           {
             when: (row) => row["status"] === "1",
             classNames: "text-primary ",
           },
+          
+        
         ],
+       
       };
     });
 
@@ -91,17 +103,19 @@ function CommanTable({
     rows: {
         style: {
             minHeight: '15px',
-           
+          
         },
     },
     headCells: {
       style: {
-          // backgroundColor:'#0B3966',
-          // color:'white',
+        backgroundColor:' #4863A0',
+        borderRight: '2px solid black',
+
+          color:'white',
           // minHeight:'15px',
         paddingTop:'5px',
           fontSize:'16px',
-          textTransform: 'capitalize',
+          textTransform: 'uppercase',
       },
   },
    
@@ -167,7 +181,7 @@ function CommanTable({
         striped={true}
         
         paginationServer
-        selectableRows
+     
         subHeader
         paginationTotalRows={total}
         paginationRowsPerPageOptions={[10, 20, 30, 50, 100, 200, 500]}
@@ -175,7 +189,7 @@ function CommanTable({
           <>
            <input
             type="text"
-            placeholder="search"
+            placeholder='search'
             className="col-6"
             value={search}
             onChange={(e) => setSearch(e.target.value)}

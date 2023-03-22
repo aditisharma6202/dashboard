@@ -8,11 +8,11 @@ const NestedDropdownData=({info})=>{
     const nestedArray = info.data[Object.keys(info.data)]
   
     return(
-    <div className="px-4">
+    <div className="bg-light-blue">
        {
         nestedArray.map((info)=>{
-            return(<Link to={`/${info.link}`}  className='nested-links ' >
-            <div className=' p-2'> {info.title}</div>
+            return(<Link to={`/${info.link}`}  className='nested-links' >
+            <div className=' py-2 px-4'> {info.title}</div>
             </Link>);
         })
        }
@@ -45,7 +45,7 @@ const NestedDropdown=({info})=>{
         {info.icon ? "" :
         <div >
         <button className="btn p-0" onClick={()=>{setOpennesteddropdown(!opennesteddropdown) }}>
-          <i class="bi bi-caret-right-fill"></i>
+        <i class="bi bi-caret-down-fill"></i>
         </button>
         </div>
         }
