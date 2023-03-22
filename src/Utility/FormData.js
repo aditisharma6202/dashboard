@@ -31,7 +31,7 @@ function FormData({ title, subTitle, data}) {
                           <h6 className='sub-title text-primary text-uppercase p-2'>
                             {subTitle}
                           </h6>
-                          <div className='col-12  overflow-x-hidden'>
+                          <div className='col-12  overflow-x-hidden bg-light-blue'>
                           <div className='row justify-content-center align-items-center '>
                           {data.map((info)=>{
                              const selectData= [info?.selectdata]

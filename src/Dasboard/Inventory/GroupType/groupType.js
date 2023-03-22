@@ -3,6 +3,7 @@ import Header from '../../../HeaderFooter/header';
 import axios from 'axios';
 import CommanTable from '../../../Utility/table';
 import { useEffect, useState } from 'react';
+import Footer from '../../../HeaderFooter/footer';
 function GroupType() {
     const [data, setData] = useState([]);
     //const [search, setSearch] = useState("");
@@ -67,7 +68,7 @@ function GroupType() {
         
       </div>
     </div>
-    
+    <Footer/>
     </> );
 }
 

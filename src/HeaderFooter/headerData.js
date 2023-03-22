@@ -2,7 +2,7 @@
 
 //dropdown nested under master
 //dropdown for account
-const nestedAccountData=[{title:'Group Type', link:'grouptype'},{title:'Group', link:'/'},{title:'Tax Group', link:'/'},{title:'Leadger', link:'/'},{title:'HSN', link:'/'},
+const nestedAccountData=[{title:'Group Type', link:'grouptype'},{title:'Group', link:'group'},{title:'Tax Group', link:'taxgroup'},{title:'Leadger', link:'leadger'},{title:'HSN', link:'/'},
 {title:'Bank', link:'/'}
 ]
 

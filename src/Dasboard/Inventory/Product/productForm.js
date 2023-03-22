@@ -1,5 +1,5 @@
 import React from "react";
-import FormData from "../../../Utility/FormData";
+
 const Detail=(props)=>{
   return(<>
  <div className="d-flex row mt-1">

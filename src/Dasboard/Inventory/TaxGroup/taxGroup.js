@@ -4,7 +4,7 @@ import axios from 'axios';
 import CommanTable from '../../../Utility/table';
 import { useEffect, useState } from 'react';
 import Footer from '../../../HeaderFooter/footer';
-function Group() {
+function TaxGroup() {
     const [data, setData] = useState([]);
     //const [search, setSearch] = useState("");
     // const [filterdata, setFilterdata] = useState([]);
@@ -40,7 +40,6 @@ function Group() {
     
     return ( <>
     <Header/>
-    
     <div className='col-12'>
       <div className='row mt-5 mx-2'>
         
@@ -50,7 +49,7 @@ function Group() {
                         <div className='desktop-height-60vh'>
         <CommanTable
           data={data}
-          title="Group Master"
+          title="Tax Group Master"
           pageId="ProductTable"
           setPage={(val) => setPage(val)}
           row={row}
@@ -59,7 +58,7 @@ function Group() {
           total={total}
           setRow={(val) => setRow(val)}
           actions={{}}
-          f2link={'groupf2'}
+          f2link={''}
 
         />
         </div>
@@ -72,4 +71,5 @@ function Group() {
     <Footer/>
     </> );
 }
-export default Group;
+
+export default TaxGroup;

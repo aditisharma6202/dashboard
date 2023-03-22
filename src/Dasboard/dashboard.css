@@ -155,6 +155,9 @@ z-index: 200;
 .title{
     border-bottom: 1px solid black;
 }
+.sub-title{
+    padding-left: 1rem!important;
+}
 .overflow-x-hidden{
     overflow-x: hidden;
 }
